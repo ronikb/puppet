@@ -20,9 +20,8 @@ node default {
 	include php
 	include mysql
 	include gitclone_medigy-drupal-db
-	include gitclone_medigy-drupa
+	include gitclone_medigy-drupal
 	include common
-	include edit-documentRoot-folder-path
 	include set-mysql-password
 	include db-create
 	include symlink

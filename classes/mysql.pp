@@ -1,4 +1,4 @@
-#
+#This will install mysql-server
 class mysql {
 	package { [ "mysql-server","mysql-client" ]:
         ensure => installed,

@@ -1,4 +1,4 @@
-#
+#This will install apache2 in ubuntu systems
 class apache {
 	package { [ "apache2" ]:
         ensure => installed,
