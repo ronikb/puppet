@@ -1,7 +1,7 @@
 #!/bin/sh
 dbuser=root
-mysql_password=$1
-newdb=$2
+mysql_password=
+newdb=$1
 #STEP 1 - CREATE DB
 #check if db exists first
 echo "Creating a database for $newdb"

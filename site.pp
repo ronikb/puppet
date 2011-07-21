@@ -6,7 +6,6 @@ $db_destination_for_restore="/medigy/medigy-drupal-db/db/medigy.sql"
 $php_memory_limit="384M"
 $var1="/var/www"
 $var2="/var/www/html/edge.devl.medigy.com/medigy-drupal/public_site/"
-$mysql_password=""
 $newdb="medigy"
 #for symlink
 $source="/medigy/medigy-drupal-db/files"
