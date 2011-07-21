@@ -3,6 +3,7 @@
 class gitclone_medigy-drupal {        
 	exec { "gitclone-medigy-drupal":
         command => "git clone $gitclone_medigy_drupal $git_destination1",
+		require => Exec['gitclone-medigy-drupal-db']
 }
 }
 
