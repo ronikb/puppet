@@ -23,7 +23,6 @@ node default {
 	include gitclone_medigy-drupal-db
 	include gitclone_medigy-drupal
 	include common
-	include set-mysql-password
 	include db-create
 	include symlink
 	include db-restore
