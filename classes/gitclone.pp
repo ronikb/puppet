@@ -1,9 +1,9 @@
 # This will execute git clone for medigy-drupal-db repository
 
-class gitclone_medigy-drupal {        
-	exec { "gitclone-medigy-drupal":
-        command => "git clone $gitclone_medigy_drupal $git_destination1",
-		require => Exec['gitclone-medigy-drupal-db']
+class gitclone_application {        
+	exec { "gitclone-application":
+        command => "git clone $gitclone_application $gitclone_application_destination",
+		require => Exec['gitclone-db']
 }
 }
 

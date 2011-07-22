@@ -10,7 +10,7 @@ class common {
         require => Package["php5"]
 }
         exec { "edit-documentRoot-folder-path":
-        command => "/etc/puppet/manifests/scripts/edit-documentRoot-folder-path.sh $var1 $var2",
+        command => "/etc/puppet/manifests/scripts/edit-documentRoot-folder-path.sh $apache_default_documentroot $apache_current_documentroot",
          require => Package["apache2"]
 }
 }
