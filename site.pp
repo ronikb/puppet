@@ -20,14 +20,16 @@ Exec {
 
 # If you want to run this manifest for a specified system, put the system name instead of default. Default means it will run all the systems.
 # If you want to disable any of the following installation or configuration changes, Please do delete that line and execute this manifest.
+
 node default {
-	include apache
-	include php
-	include mysql
 	include gitclone_db
 	include gitclone_application
-	include common
+	include apache
+	include mysql
+	include php
+	include apache_conf_file
 	include db-create
-	include symlink
 	include db-restore
+	include symlink
+	include change_php_memory_limit
 }
